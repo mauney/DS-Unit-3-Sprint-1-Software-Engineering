@@ -264,9 +264,14 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+
+I'm speculating here, because I have yet to participate in a code review. First, catching potential bugs or un-handled edge cases is important. After that, assuming the code functions as intended and is style-compliant, I would value feedback on readability and maintainability. Someone new to the code should be able to easily understand what the code is doing and, optimally, see why the code is doing it in the way that it does. There should be as little friction as possible for someone else to use or modify the code. One other area of review could be optimization, if needed or anticipated to be needed.
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+
+A virtual environment can guarantee that multiple users are working with the same versions of packages, but the underlying operating system and installed programs might be different or differently configured. This can lead to inconsistent results when the same code is run on different machines. A container provides a reusable, identical baseline for everyone to work from, no matter the configuration of their individual computer. Containers ensure the reproducability of code.
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
